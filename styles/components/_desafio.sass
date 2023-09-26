@@ -1,0 +1,39 @@
+@use 'sass:math'
+@import styles/abstract/_variables.scss
+
+#desafio
+   display: flex
+   justify-content: space-evenly
+   align-items: center
+   margin-top: 2rem
+
+   .img-container
+      width: 50%
+      text-align: center
+      
+      img
+   
+   .textos
+      width: 50%
+   
+      h4
+         font-size: math.div($tamanho-texto, 2.5)
+         color: $cor-secundaria
+         text-transform: uppercase
+         font-weight: 300
+         text-align: left
+
+      h3
+         text-align: left
+         font-size: math.div($tamanho-texto, 1.2)
+         margin-bottom: 18px
+         font-weight: 300
+
+      p
+         margin-top: 1rem
+         width: 75%
+         letter-spacing: 1px
+         font-weight: 300
+         line-height: 1rem
+         text-align: justify
+
